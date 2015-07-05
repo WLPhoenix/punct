@@ -1,4 +1,3 @@
--*- encoding: utf-8 -*-
 ## Punct
 
 Punct is a library to convert fancy unicode puntuation into boring, but much easier to work with, ascii punctuation.
