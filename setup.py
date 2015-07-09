@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-version = '0.0.1a0'
+version = '0.0.1a1'
 
 setup(
     name='punct',

@@ -6,6 +6,16 @@ import re
 class REPLACEMENTS:
     SINGLE_QUOTE = "'"
     DOUBLE_QUOTE = '"'
+    HYPHEN = '-'
+    GRAVE = '`'
+    FORWARD_SLASH = '/'
+    VERTICAL_BAR = '|'
+    EXCLAMATION_POINT = '!'
+    CARAT = '^'
+    TILDE = '~'
+    UNDERSCORE = '_'
+    PERCENT = '%'
+    COLON = ':'
 
     MAP = {
         SINGLE_QUOTE: {
@@ -34,6 +44,65 @@ class REPLACEMENTS:
             "\u3003": "DITTO MARK",
             "\u301d": "REVERSED DOUBLE PRIME QUOTATION MARK",
             "\u301e": "DOUBLE PRIME QUOTATION MARK",
+        },
+        GRAVE: {
+            "\u02cb": "MODIFIER LETTER GRAVE ACCENT",
+            "\u0300": "COMBINING GRAVE ACCENT",
+            "\u2035": "REVERSED PRIME",
+        },
+        HYPHEN: {
+            "\u00ad": "SOFT HYPHEN",
+            "\u2010": "HYPHEN",
+            "\u2011": "NON-BREAKING HYPHEN",
+            "\u2012": "FIGURE DASH",
+            "\u2013": "EN DASH",
+            "\u2014": "EM DASH",
+            "\u2212": "MINUS SIGN",
+        },
+        FORWARD_SLASH: {
+            "\u00f7": "DIVISION SIGN",
+            "\u0338": "COMBINING LONG SOLIDUS OVERLAY",
+            "\u2044": "FRACTION SLASH",
+            "\u2215": "DIVISION SLASH",
+        },
+        VERTICAL_BAR: {
+            "\u01c0": "LATIN LETTER DENTAL CLICK",
+            "\u05c0": "HEBREW PUNCTUATION PASEQ",
+            "\u2223": "DIVIDES",
+            "\u2758": "LIGHT VERTICAL BAR",
+        },
+        EXCLAMATION_POINT: {
+            "\u01c3": "LATIN LETTER RETROFLEX CLICK",
+            "\u2762": "HEAVY EXCLAMATION MARK ORNAMENT",
+        },
+        CARAT: {
+            "\u02c4": "MODIFIER LETTER UP ARROWHEAD",
+            "\u02c6": "MODIFIER LETTER CIRCUMFLEX ACCENT",
+            "\u0302": "COMBINING CIRCUMFLEX ACCENT",
+            "\u2038": "CARET",
+            "\u2303": "UP ARROWHEAD",
+        },
+        TILDE: {
+            "\u02dc": "SMALL TILDE",
+            "\u0303": "COMBINING TILDE",
+            "\u2053": "SWUNG DASH",
+            "\u223c": "TILDE OPERATOR",
+            "\u301c": "WAVE DASH",
+        },
+        UNDERSCORE: {
+            "\u02cd": "MODIFIER LETTER LOW MACRON",
+            "\u0331": "COMBINING MACRON BELOW",
+            "\u0332": "COMBINING LOW LINE",
+            "\u2017": "DOUBLE LOW LINE",
+        },
+        PERCENT: {
+            "\u066a": "ARABIC PERCENT SIGN",
+            "\u2052": "COMMERCIAL MINUS SIGN",
+        },
+        COLON: {
+            "\u0589": "ARMENIAN FULL STOP",
+            "\u05c3": "HEBREW PUNCTUATION SOF PASUQ",
+            "\u2236": "RATIO",
         }
     }
 
