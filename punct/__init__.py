@@ -111,7 +111,8 @@ class REPLACEMENTS:
         return "[%s]" % "".join(cls.MAP[char])
 
 
-def normalize(s):
+def normalize(s, encoding='UTF-8'):
+    s = unicode(s, encoding)
     for char in REPLACEMENTS.MAP:
         s = re.sub(REPLACEMENTS.get_replace_regex(char), char, s)
     return s
