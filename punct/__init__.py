@@ -112,7 +112,8 @@ class REPLACEMENTS:
 
 
 def normalize(s, encoding='UTF-8'):
-    s = unicode(s, encoding)
+    if not isinstance(s, unicode):
+        s = unicode(s, encoding)
     for char in REPLACEMENTS.MAP:
         s = re.sub(REPLACEMENTS.get_replace_regex(char), char, s)
     return s
